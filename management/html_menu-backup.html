@@ -1,0 +1,98 @@
+<ul id="qm0" class="qmmc qm-horizontal-c">
+
+	<li><a class="qmitem-m qmparent" href="javascript:void(0);" title="LDAP Management">LDAP</a>
+		<ul class="qmsub">
+		<li><a class="qmitem-s" href="javascript:sendHost('ldapquerygroups', 'LDAP Groups List' );">Query Groups</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('ldapquerygroupofnames', 'LDAP Group of Names List' );">Query Group of Names</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_query_iyte_users');">Query Iyte Users</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('ldapqueryguestusers', 'Guest Users List' );">Query Guest Users</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('ldapqueryspclusers', 'Spcl Users List' );">Query Spcl Users</a></li>
+		<li><span class="qmdivider qmdividerx"></span></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_add_group');">Add Group</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_add_group_of_names');">Add Group of Names</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_add_guest_user');">Add Guest User</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_add_batch_guest_user');">Add Batch Guest Users</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_add_spcl_user');">Add Spcl User</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ldap_add_attribute');">Add Attribute</a></li>
+		</ul>
+	</li>
+
+	<li><a class="qmitem-m qmparent" href="javascript:void(0);" title="Switch Management">Switch</a>
+
+		<ul class="qmsub">
+		<li><a class="qmitem-s" href="javascript:sendHost('switchquerydevicelist', 'Device List' );" title="Show Switch list">Show Switch List</a></li>
+		<li><span class="qmdivider qmdividerx"></span></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_switch_query_device_info');">Show Single Switch Info</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('switchquerydeviceinfoall', 'Device Info' );">Show All Switch Info</a></li>
+		<li><span class="qmdivider qmdividerx"></span></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_switch_query_device_interface_list');">Show Single Switch Interface List</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('switchquerydeviceinterfacelistall', 'Interface Lipst' );">Show All Switch Interface List</a></li>
+		<li><span class="qmdivider qmdividerx"></span></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_switch_query_device_cdp_list');">Show Single Switch Cdp List</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('switchquerydevicecdplistall', 'Cdp List' );">Show All Switch Cdp List</a></li>
+		<li><span class="qmdivider qmdividerx"></span></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_switch_query_device_ip_mac_list');">Show Single Switch Ip-Mac List</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('switchquerydeviceipmaclistall', 'Ip - Mac List' );">Show All Switch Ip-Mac List</a></li>
+		</ul>
+	</li>
+
+	<li><a class="qmitem-m qmparent" href="javascript:void(0)" title="Access Point Management">Access Point</a>
+
+		<ul class="qmsub">
+		<li><a class="qmitem-s" href="javascript:sendHost('apquerydevicelist', 'AP List' );" title="Show Access Point devices">Show Access Point List</a></li>
+		<li><span class="qmdivider qmdividerx"></span></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_ap_query_device_info');" title="Show AP device info">Show Single AP Info</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('apquerydeviceinfoall', 'Device Info' );">Show All AP Info</a></li>
+		</ul>
+	</li>
+
+	<li><a class="qmitem-m qmparent" href="javascript:void(0)," title="Log Monitoring">Eduroam Log Monitor</a>
+
+		<ul class="qmsub">
+		<li><a class="qmitem-s qmparent" href="javascript:void(0)," title="Query Eduroam accept logs">Eduroam Accept</a>
+			<ul class="qmsub">
+			<li><a class="qmitem-s" href="javascript:showWindow('window_eduroam_accept_query_user');">User Query</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('eduroamacceptqueryall', 'All eduroam Accept List' );">Query All</a></li>
+			</ul>
+		</li>
+
+		<li><a class="qmitem-s qmparent" href="javascript:void(0);" title="Query Eduroam reject logs">Eduroam Reject</a>
+			<ul class="qmsub">
+			<li><a class="qmitem-s" href="javascript:showWindow('window_eduroam_reject_query_user');">User Query</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('eduroamrejectqueryall', 'All eduroam Reject List' );">Query All</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('eduroamrejectqueryldaperrors', 'eduroam Reject LDAP Errors List' );">LDAP Errors</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('eduroamrejectquerycertificateerrors', 'eduroam Reject Certificate Errors List' );">Certificate Errors</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('eduroamrejectquerydomainerrors', 'eduroam Reject Domain Errors List' );">Domain Errors</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('eduroamrejectqueryunspecifiederrors', 'eduroam Reject Unspecified Errors List' );">Unspecified Errors</a></li>
+			</ul>
+		</li>
+		</ul>
+	</li>
+
+
+	<li><a class="qmitem-m qmparent" href="javascript:void(0)," title="Log Monitoring">Dhcp Log Monitor</a>
+		<ul class="qmsub">
+		<li><a class="qmitem-s" href="javascript:sendHost('dhcpqueryconf', 'Dhcp Configuration Parameters' );" title="Show Dhcp configuration parameters">Dhcp Conf</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('dhcpqueryhost', 'Dhcp Host List' );" title="Show Dhcp host definitions">Dhcp Host</a></li>
+		<li><a class="qmitem-s" href="javascript:sendHost('dhcpquerynetwork', 'Dhcp Network List' );" title="Show Dhcp network definitions">Dhcp Network</a></li>
+
+		<li><a class="qmitem-s qmparent" href="javascript:void(0);" title="Query Dhcp lease file">Dhcp Lease</a>
+			<ul class="qmsub">
+			<li><a class="qmitem-s" href="javascript:showWindow('window_dhcp_lease_query_user_ip');">User Query By Ip Address</a></li>
+			<li><a class="qmitem-s" href="javascript:showWindow('window_dhcp_lease_query_user_mac');">User Query By Mac Address</a></li>
+			<li><a class="qmitem-s" href="javascript:sendHost('dhcpqueryleaseall' , 'All Dhcp Lease List' );">Query All</a></li>
+			</ul>
+		</li>
+		</ul>
+	</li>
+
+	<li><a class="qmitem-m qmparent" href="javascript:void(0);" title="Find User Connected Port">Find User</a>
+
+		<ul class="qmsub">
+		<li><a class="qmitem-s" href="javascript:showWindow('window_find_user_input_by_mac');" title="Use MAC address to find the user connected port">By MAC Address</a></li>
+		<li><a class="qmitem-s" href="javascript:showWindow('window_find_user_input_by_ip');" title="Use IP address to find the user connected port">By IP Address</a></li>
+		</ul>
+	</li>
+
+</ul>
+<br>

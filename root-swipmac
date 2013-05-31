@@ -1,0 +1,3 @@
+###her 10 dakikada bir kampus switch ip-mac tablosu netwotk-db veri tabanina yaziliyor.
+*/10  * * * * /bin/swipmac.sh
+

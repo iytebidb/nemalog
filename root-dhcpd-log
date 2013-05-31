@@ -1,0 +1,40 @@
+#Hizli arama
+00 08  * * *    /usr/bin/updatedb
+
+#ntpdate senkronizasyonu ulakbim
+00 23  * * *    /usr/sbin/ntpdate 193.140.100.40
+
+#saat 07 de yedek aliniyor...
+00 07  * * *  /var/yedek/gz-yedekle
+
+#saat 08:00 da named ve dhcpd resetle
+00 08  * * *  /etc/rc.d/init.d/dhcpd restart
+00 08  * * *  /etc/rc.d/init.d/named restart
+00 08  * * *  /etc/rc.d/init.d/rsyslog restart
+
+#saat 12:00 da named ve dhcpd resetle
+00 12  * * *  /etc/rc.d/init.d/dhcpd restart
+00 12  * * *  /etc/rc.d/init.d/named restart
+00 12  * * *  /etc/rc.d/init.d/rsyslog restart
+
+#saat 18:00 da named ve dhcpd resetle
+00 18  * * *  /etc/rc.d/init.d/dhcpd restart
+00 18  * * *  /etc/rc.d/init.d/named restart
+00 18  * * *  /etc/rc.d/init.d/rsyslog restart
+
+#saat 21:30 da named ve dhcpd resetle
+30 21  * * *  /etc/rc.d/init.d/dhcpd restart
+30 21  * * *  /etc/rc.d/init.d/named restart
+30 21  * * *  /etc/rc.d/init.d/rsyslog restart
+
+#saat 12:30 de yedek aliniyor...
+30 12  * * *  /var/yedek/gz-yedekle
+
+#saat 20:00 da yedek aliniyor...
+00 20  * * *  /var/yedek/gz-yedekle
+
+#saat 21:00 da named temp dosyalar siliniyor...
+00 21  * * *  /var/named/chroot/var/named/sil-named-core-tmp.sh
+
+###her 10 dakikada bir dhcpd conf ve lease dosyasý network-db veritabani ile senkron ediliyor.
+*/10  * * * * /bin/dhcpd-log.sh
